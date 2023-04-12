@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Public+Sans:wght@300;400;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color:#000000;
+}
+img{
+    max-width: 100%; /*define a largura máxima do elemento*/
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Public Sans', sans-serif;
+    
+}
+/*CABEÇALHO*/
+.cabecalho{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #fff;
+    position: sticky;
+    top: 0; /*sem o top 0 o position sticky nao funciona, ou seja não fixa*/
+    background-color:#8164d7;
+    width: 100%;
+    
+}
+.logo .imagem{     
+    width: 200px;
+    height: 100px;
+}
+
+.navegacao{/*lista*/
+    display: flex;
+}
+.navegacao li a{  /*login e cadastro*/
+    padding: 15px;
+    margin: 10px;
+    color:#f4f1f9;
+}
+/*Painél*/
+
+/*section 1*/
+.conteudo-principal .conteudo-quem-somos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo-quem-somos .texto{
+    color: rgb(39, 39, 50);
+    font-size: 25px;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: justify;
+    margin-left: 15px;
+    width: 50%;
+}
+
+.imagem-texto-secao-1{ 
+    width: 800px;
+} 
+/*section 1*/
+/*section 2*/
+.secao-do-curso{
+    background: linear-gradient(180deg, #8164d7 46%, #d04192 100%) fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.texto-secao{
+    color: rgb(223, 217, 223);
+    font-size: 25px;
+    text-align: justify;
+    width:50%;
+    margin-right: 15px;
+}
+
+/*section 2*/
+/*section 3*/
+.fatecoins{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.texto-fatecoins{
+    color: rgb(39, 39, 50);
+    font-size: 25px;
+    width: 50%;
+    text-align: justify;
+    margin-left: 15px;
+}
+
+.imagem-foguete{
+    width: 50%;
+}
+/*section 3*/
+/*Rodapé*/
+
+.rodape .copyright{
+    margin: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);    
+}
+/*rodapé*/
+@media(max-width: 360px){
+    .imagem-programador{
+        display: none;
+    }
+    .cabecalho{
+        display: block;
+        position: static;
+        text-align: center;
+    }
+    .navegacao{
+        display: flex;
+        justify-content: center;
+    }
+    li{
+        margin: 10px;
+    }
+    .conteudo-quem-somos .texto{
+        font-size: 16px;
+        width: 100%;
+        margin: 15px;
+    }
+    .texto-fatecoins{
+        margin: 15px 15px 15px 0;
+    }
+}
+@media(max-width: 600px){
+    .cabecalho{
+        display: block;
+        position: static;
+        text-align: center;
+    }
+
+    .navegacao{
+        display: flex;
+        justify-content: center;
+    }
+    li{
+        margin: 10px;
+    }
+    .imagem-texto-secao-1, .imagem-foguete{
+        display: none;
+    }
+    .conteudo-quem-somos .texto{
+        font-size: 16px;
+        width: 100%;
+        margin: 10px;
+    }
+    .secao-do-curso{
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+    .secao-do-curso.imagem-programador{
+        height: 50%;
+        width: 25%;
+    }
+    .secao-do-curso .texto-secao{
+        font-size: 20px;
+        width: 75%;
+        height: 50%;
+        text-align: justify;
+        margin-left: 30px;
+    }
+    
+    .texto-fatecoins{
+        font-size: 16px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .rodape .copyright{
+        margin: 20px;
+    }
+    
+}
+@media(max-width: 765px){/*vai fazer até 765px*/
+    .cabecalho{
+        position: static;
+    }
+    .conteudo-quem-somos .texto, .secao-do-curso .texto-secao,  .fatecoins .texto-fatecoins{
+        font-size: 16px;
+    }
+    .conteudo-quem-somos .imagem-texto-secao-1, .secao-do-curso .imagem-programador{
+        width: 350px;
+    }
+    .rodape .copyright{
+        text-align: center;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="estilo-tela-login.css">
+    <script>
+        function funcao1(){
+            alert("Login efetuado com sucesso");
+        }
+        </script>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="#" class="logo">
+            <img src="active-tech-3.gif" alt="logo Active Tec" class="imagem-logo">
+        </a>
+    
+    <div class="container">
+        <div class="card">
+           <div class="container-form">
+                <form>
+                     <div class="container-label">Login<span></span></div>
+                    
+                    <label for="email">E-mail</label>
+                    <input type="text" class="email" placeholder="Digite seu e-mail" autofocus/>
+
+                    <label for="password">Senha</label>
+                    <input type="password" class="password" placeholder="Digite a sua senha"/>
+
+                    <div class="change-password">
+                        Para alterar a senha <a href="">clique aqui</a>
+                    </div>
+                    
+                    <button type="submit" onclick="funcao1()" value="Exibir Alert">Entrar</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
